@@ -26,7 +26,7 @@ for ((j=0; j < ${#number[@]}; j++))
 do
 #	echo ${number[j]}
 
-	if [[ ( ${number[j]} -gt $largest ) && ( ${number[j]} -gt $secondmax ) ]]
+	if [[ ${number[j]} -gt $largest ]]
 	then
 			#max=${number[j]}
 			secondmax=$largest
@@ -37,11 +37,11 @@ do
 		secondmax=${number[j]}
 	fi
 
-	if [ ${number[j]} -lt $smallest ]
+	if [ ${number[j]} -le $smallest ]
 	then
 		secondmin=$smallest
 		smallest=${number[j]}
-	elif [[ ( ${number[j]} -ne $smallest ) && ( ${number[j]} -le $secondmin ) ]]
+	elif [[ ${number[j]} -le $secondmin ]]
 	then
 		secondmin=${number[j]}
 fi
