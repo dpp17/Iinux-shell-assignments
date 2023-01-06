@@ -25,4 +25,6 @@ case $n in
         7)
                 echo " Sunday "
         ;;
+	*)
+		echo " * * * Enter valid week_Day_number * * * "
 esac

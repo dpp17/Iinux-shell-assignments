@@ -29,4 +29,6 @@ case $num in
                 echo " hundredth_digit " $hund
 		echo " thousandth_digit " $thous
         ;;
+	*)
+		echo " * * * Enter number from options ONLY * * * "
 esac

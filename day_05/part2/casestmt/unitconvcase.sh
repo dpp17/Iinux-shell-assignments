@@ -1,8 +1,10 @@
 <<com
+
 1ft = 12 inch = 0.3048 meter
 1 meter = 3.28084 ft
 1 inch = 0.0833333
 com
+
 echo " - - - - - - Program for unit conversion - - - - - -"
 printf "\n"
 
@@ -34,6 +36,8 @@ case $op in
 		four=`echo $num | awk '{print $1*3.28084}'`
 		echo " $num meter :: " $four "feet"
         ;;
+	*)
+		echo " * * * Enter a valid option * * *"
 esac
 
 
