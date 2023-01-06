@@ -2,44 +2,39 @@ echo " Read a single digit number and write the number in word "
 printf "\n"
 
 read -p "enter a single digit number :: " n
-num=$(($n%10))
-case $num in
+#num=$(($n%10))
+case $n in
         2)
-                echo " Two "
+        echo " Two "
         ;;
-
         3)
-                echo " Three "
+        echo " Three "
         ;;
-
         4)
-                echo " Four "
+        echo " Four "
         ;;
-
         5)
-                echo " Five "
+        echo " Five "
         ;;
-
         6)
-                echo " Six "
+        echo " Six "
         ;;
-
         7)
-                echo " Seven "
+        echo " Seven "
         ;;
-
         8)
-                echo " Eight "
+        echo " Eight "
         ;;
-
         9)
-                echo " Nine "
+        echo " Nine "
         ;;
-
         0)
-                echo " Zero "
+        echo " Zero "
         ;;
         1)
-                echo " One "
+        echo " One "
         ;;
+	*)
+	echo " enter a S I N G L E digit"
 esac
+
